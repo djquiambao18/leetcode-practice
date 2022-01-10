@@ -19,6 +19,8 @@ public class AddBinary {
         return runningTotal;
     }
     public String binAdd(String a, String b) {
+        System.out.println(a.length());
+        System.out.println(b.length());
         int bin_a = Integer.parseInt(a);
         System.out.println(bin_a);
 
