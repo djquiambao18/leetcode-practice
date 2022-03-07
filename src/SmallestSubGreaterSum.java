@@ -7,7 +7,14 @@ public class SmallestSubGreaterSum {
     //arr = is array, s is the num need to find subarray sum greater than or equal to.
     public int findSum(int [] arr, int s)
     {
+        int minLength = 0;
+        if(arr.length > 0) {
+            int startWindow = 0;
+            for (int i = 0; i < arr.length; i ++){
 
+            }
+        }
+        return minLength;
     }
 
 }
