@@ -5,7 +5,7 @@ public class UnitTests extends Assertions{
 
     @Test
     public void SmallestSubTest(){
-//LC # 209 - Smallest Subarray with Greater Sum:
+    //LC # 209 - Smallest Subarray with Greater Sum:
         SmallestSubGreaterSum sol = new SmallestSubGreaterSum();
         int [] arr = new int[]{2, 1, 5, 2, 3, 2};
         int target = 7, expected = 2;
