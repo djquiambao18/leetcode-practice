@@ -9,17 +9,13 @@ public class LongestSubstrKDistinctChars {
             Set<Character> set = new HashSet<Character>();
             //Sliding window:
             int startWindex = 0; //Window Index == Windex
-
             for(int i = 0; i < str.length(); i++){
                 set.add(str.charAt(i));
                 while(set.size() > K) {
                     length = Math.max(length, i - startWindex);
-
-
+                    set.remove(str.charAt(startWindex++));
                 }
-
             }
-
         }
         return length;
     }
