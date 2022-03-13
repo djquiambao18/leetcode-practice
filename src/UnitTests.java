@@ -46,12 +46,34 @@ public class UnitTests extends Assertions{
         str = "bbbbb";
         length = ll.lengthOfLongestSubstring(str);
         expected = 1;
+        assertEquals(expected, length);
         System.out.println("Test 2:\nExpected: " + expected + " \tActual: " + length);
 
         str = "pwwkew";
         length = ll.lengthOfLongestSubstring(str);
         expected = 3;
+        assertEquals(expected, length);
         System.out.println("Test 3:\nExpected: " + expected + " \tActual: " + length);
 
+    }
+
+    @Test
+    public void longestSubstrKDistinctChars(){
+        System.out.println("\nLongest Substring with K Distinct Characters:");
+        LongestSubstrKDistinctChars lk = new LongestSubstrKDistinctChars();
+        int result = lk.lengthSubstr("araaci", 2);
+        int expected = 4;
+        System.out.println("Test 1: \nExpected: " + expected + " \tActual: " + result);
+        assertEquals(expected, result);
+
+        result = lk.lengthSubstr("araaci", 1);
+        expected = 2;
+        System.out.println("Test 2: \nExpected: " + expected + " \tActual: " + result);
+        assertEquals(expected, result);
+
+        result = lk.lengthSubstr("cbbebi", 3);
+        expected = 5;
+        System.out.println("Test 3: \nExpected: " + expected + " \tActual: " + result);
+        assertEquals(expected, result);
     }
 }
